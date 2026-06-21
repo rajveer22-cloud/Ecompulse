@@ -141,39 +141,38 @@ ecompulse/
 
 ## Login Page
 
-![Login](screenshots/login.png)
-
+![Login](Screenshots/login.png)
 # Dashboard
 
-![Dashboard Overview](screenshots/dashboard-overview.png)
+![Dashboard Overview](Screenshots/dashboard-overview.png)
 
-![Dashboard Analytics](screenshots/dashboard-chart.png)
+![Dashboard Analytics](Screenshots/dashboard-chart.png)
 
-![Low Stock Products](screenshots/dashboard-low-stock.png)
+![Low Stock Products](Screenshots/dashboard-low-stock.png)
 
 # Add Product
 
-![Add Product](screenshots/add-product.png)
+![Add Product](Screenshots/add-product.png)
 
 # View Products
 
-![View Products](screenshots/view-products.png)
+![View Products](Screenshots/view-products.png)
 
 # Sell Product
 
-![Sell Product](screenshots/sell-product.png)
+![Sell Product](Screenshots/sell-product.png)
 
 # Sales History
 
-![Sales History](screenshots/sales-history.png)
+![Sales History](Screenshots/sales-history.png)
 
 # Profile
 
-![Profile](screenshots/profile.png)
+![Profile](Screenshots/profile.png)
 
 # Navigation Sidebar
 
-![Sidebar](screenshots/sidebar.png)
+![Sidebar](Screenshots/sidebar.png)
 
 
 ---
