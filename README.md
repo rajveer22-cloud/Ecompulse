@@ -1,180 +1,302 @@
 # EcomPulse 🛒
 
-A full-featured **Seller Dashboard** web application for managing inventory, tracking sales, and monitoring revenue — built for e-commerce sellers.
+A Seller Inventory & Sales Management Dashboard built using PHP, MySQL, HTML, CSS, JavaScript, Bootstrap, and Chart.js.
+
+EcomPulse helps sellers manage inventory, track sales, monitor revenue, analyze stock distribution, and receive low-stock alerts from a centralized dashboard.
 
 ---
 
+## 📸 Project Screenshots
+
+### 🔐 Login Page
+
+![Login](Screenshots/login.png)
+
+---
+
+### 📊 Dashboard Overview
+
+![Dashboard Overview](Screenshots/dashboard-overview.png)
+
+---
+
+### 📈 Product Stock Distribution Analytics
+
+![Dashboard Analytics](Screenshots/dashboard-chart.png)
+
+---
+
+### ⚠️ Low Stock Alerts
+
+![Low Stock Products](Screenshots/dashboard-low-stock.png)
+
+---
+
+### ➕ Add Product
+
+![Add Product](Screenshots/add-product.png)
+
+---
+
+### 📦 View Products
+
+![View Products](Screenshots/view-products.png)
+
+---
+
+### 🛒 Sell Product
+
+![Sell Product](Screenshots/sell-product.png)
+
+---
+
+### 📋 Sales History
+
+![Sales History](Screenshots/sales-history.png)
+
+---
+
+### 👤 Seller Profile
+
+![Profile](Screenshots/profile.png)
+
+---
+
+### 🧭 Navigation Sidebar
+
+![Sidebar](Screenshots/sidebar.png)
 
 ---
 
 ## ✨ Features
 
-- 🔐 **Seller Authentication** — Secure login with email and password; each seller gets a unique Seller UID (e.g. `SELLER5361`)
-- 📊 **Dashboard Overview** — At-a-glance stats cards for:
-  - Total Products
-  - Total Stock
-  - Low Stock Items
-  - Total Revenue (₹)
-- 🥧 **Product Stock Distribution Chart** — Interactive pie chart showing stock breakdown by product
-- ⚠️ **Low Stock Alerts** — Automatically flags products below threshold (stock ≤ 5)
-- 📦 **Product Management**
-  - Add products (name, category, price, stock quantity)
-  - View all products in a searchable table
-  - Edit or delete existing products
-- 🛍️ **Sell Product** — Record sales by selecting a product and quantity; stock updates automatically
-- 📈 **Sales History** — Full log of past sales with product name, quantity, total price, and timestamp
-- 👤 **Seller Profile** — View account details including email, UID, total products, revenue, and account creation date
+### 🔐 Authentication System
+
+- Seller Registration
+- Seller Login
+- Secure Session Management
+- Logout Functionality
+
+### 📊 Dashboard Analytics
+
+- Total Products
+- Total Stock
+- Low Stock Products
+- Total Revenue
+- Seller UID Display
+
+### 📦 Product Management
+
+- Add Product
+- View Products
+- Edit Product
+- Delete Product
+- Product Search
+
+### 🛒 Sales Management
+
+- Record Product Sales
+- Automatic Stock Updates
+- Revenue Calculation
+- Sales Tracking
+
+### 📈 Analytics
+
+- Product Stock Distribution Chart
+- Low Stock Monitoring
+- Revenue Tracking
+
+### 👤 Seller Profile
+
+- Seller Information
+- Seller UID
+- Total Products
+- Total Revenue
+- Account Creation Date
 
 ---
 
-## 🗂️ Pages
+## 🛠️ Technology Stack
 
-| Page | Description |
-|------|-------------|
-| `/login` | Seller login screen |
-| `/dashboard` | Main overview with stats and charts |
-| `/add-product` | Form to add a new product |
-| `/products` | View, search, edit, and delete products |
-| `/sell` | Record a product sale |
-| `/sales-history` | View all past sales transactions |
-| `/profile` | Seller account info |
+### Frontend
 
----
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
 
-## 🧭 Navigation
+### Backend
 
-The sidebar (dark theme) includes:
+- PHP
 
-- 📊 Dashboard
-- ➕ Add Product
-- 📦 View Products
-- 🛒 Sell Product
-- 📈 Sales History
-- 👤 Profile
-- 🚪 Logout
+### Database
 
----
+- MySQL
 
-## 🛠️ Tech Stack
+### Visualization
 
-> *(Update this section based on your actual implementation)*
+- Chart.js
 
-- **Frontend:** HTML / CSS / JavaScript *(or React / Vue)*
-- **Backend:** Node.js / Python / PHP *(or your framework)*
-- **Database:** MySQL / PostgreSQL / MongoDB *(or your DB)*
-- **Charts:** Chart.js / Recharts *(for pie chart)*
+### Server
+
+- XAMPP Apache Server
 
 ---
 
-## 🚀 Getting Started
+## 🗄️ Database
 
-### Prerequisites
+Database Name:
 
-- Node.js ≥ 18 *(or your runtime)*
-- Database set up and running
+```sql
+ecompulse
+```
 
-### Installation
+### Main Tables
+
+#### users
+
+```sql
+id
+name
+email
+password
+seller_uid
+created_at
+```
+
+#### products
+
+```sql
+id
+product_name
+category
+price
+stock
+created_at
+```
+
+#### sales
+
+```sql
+id
+product_id
+quantity
+total_price
+sale_date
+```
+
+---
+
+## 🚀 Installation Guide
+
+### 1. Clone Repository
 
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/ecompulse.git
-
-# Navigate into the project
-cd ecompulse
-
-# Install dependencies
-npm install
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your DB credentials and secret keys
-
-# Run the development server
-npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+### 2. Move Project
 
----
+Copy the project folder to:
 
-## ⚙️ Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-DB_HOST=localhost
-DB_USER=your_db_user
-DB_PASSWORD=your_db_password
-DB_NAME=ecompulse
-JWT_SECRET=your_jwt_secret
-PORT=3000
+```text
+C:\xampp\htdocs\
 ```
+
+### 3. Start XAMPP
+
+Start:
+
+- Apache
+- MySQL
+
+### 4. Create Database
+
+Open phpMyAdmin and create:
+
+```sql
+ecompulse
+```
+
+### 5. Import Database
+
+Import your SQL database file into phpMyAdmin.
+
+### 6. Configure Database
+
+Open:
+
+```text
+config/db.php
+```
+
+Update database credentials if required.
+
+### 7. Run Project
+
+Open the project through your local Apache server.
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 ecompulse/
-├── public/             # Static assets
-├── src/
-│   ├── pages/          # Route pages (dashboard, products, sales, etc.)
-│   ├── components/     # Reusable UI components
-│   ├── api/            # Backend API routes
-│   └── db/             # Database models and queries
-├── .env.example
-├── package.json
+│
+├── auth/
+│   ├── login.php
+│   ├── signup.php
+│   └── logout.php
+│
+├── config/
+│   └── db.php
+│
+├── dashboard/
+│   └── index.php
+│
+├── products/
+│   ├── add.php
+│   ├── edit.php
+│   ├── delete.php
+│   └── index.php
+│
+├── profile/
+│   └── index.php
+│
+├── sales/
+│
+├── asset/
+│
+├── Screenshots/
+│
 └── README.md
 ```
 
 ---
 
-## 👤 Author
+## 🎯 Future Enhancements
 
-**Rajveer Soni**
-- Email: rajveer2005soni@gmail.com
-- Seller UID: SELLER5361
+- PDF Invoice Generation
+- Export Sales Reports
+- Advanced Revenue Analytics
+- Product Category Analytics
+- Multi-Seller Support
+- Email Notifications
+- Dark Mode
+- GST Invoice Support
 
 ---
 
-## Website Preview
+## 👨‍💻 Author
 
-## Login Page
+### Rajveer Soni
 
-![Login](Screenshots/login.png)
-# Dashboard
+B.Tech Computer Science (AIML)
 
-![Dashboard Overview](Screenshots/dashboard-overview.png)
-
-![Dashboard Analytics](Screenshots/dashboard-chart.png)
-
-![Low Stock Products](Screenshots/dashboard-low-stock.png)
-
-# Add Product
-
-![Add Product](Screenshots/add-product.png)
-
-# View Products
-
-![View Products](Screenshots/view-products.png)
-
-# Sell Product
-
-![Sell Product](Screenshots/sell-product.png)
-
-# Sales History
-
-![Sales History](Screenshots/sales-history.png)
-
-# Profile
-
-![Profile](Screenshots/profile.png)
-
-# Navigation Sidebar
-
-![Sidebar](Screenshots/sidebar.png)
 
 
 ---
 
-> Built with ❤️ for efficient seller inventory management.
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
