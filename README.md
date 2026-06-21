@@ -4,11 +4,6 @@ A full-featured **Seller Dashboard** web application for managing inventory, tra
 
 ---
 
-## 📸 Screenshots
-
-| Login | Dashboard |
-|-------|-----------|
-| Seller login with email & password | Welcome screen with stats overview |
 
 ---
 
@@ -142,9 +137,44 @@ ecompulse/
 
 ---
 
-## 📄 License
+## Website Preview
 
-This project is licensed under the [MIT License](LICENSE).
+## Login Page
+
+![Login](screenshots/login.png)
+
+# Dashboard
+
+![Dashboard Overview](screenshots/dashboard-overview.png)
+
+![Dashboard Analytics](screenshots/dashboard-chart.png)
+
+![Low Stock Products](screenshots/dashboard-low-stock.png)
+
+# Add Product
+
+![Add Product](screenshots/add-product.png)
+
+# View Products
+
+![View Products](screenshots/view-products.png)
+
+# Sell Product
+
+![Sell Product](screenshots/sell-product.png)
+
+# Sales History
+
+![Sales History](screenshots/sales-history.png)
+
+# Profile
+
+![Profile](screenshots/profile.png)
+
+# Navigation Sidebar
+
+![Sidebar](screenshots/sidebar.png)
+
 
 ---
 
